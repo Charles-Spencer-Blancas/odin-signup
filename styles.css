@@ -115,3 +115,7 @@ label {
     color:#3e4e22;
     text-decoration: none;
 }
+
+.password:invalid {
+    border-color: red;
+}
