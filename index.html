@@ -9,13 +9,124 @@
     </head>
     <body>
         <div class="base">
-            <img
-                class="leftImage"
-                src="/images/mountain_view.jpg"
-                alt="The view from a mountain"
-            />
+            <div class="leftSide">
+                <img
+                    class="leftImage"
+                    src="/images/mountain_view.jpg"
+                    alt="The view from a mountain"
+                />
 
-            <div class="content"></div>
+                <div class="logoContainer">
+                    <img
+                        src="/images/logo.svg"
+                        alt="Smiley face logo"
+                        class="logoImage"
+                    />
+                    <h1 class="logoText">Charles</h1>
+                </div>
+            </div>
+
+            <div class="content">
+                <p class="topText">
+                    This is not a real online service! You know you need
+                    something like this in your life to help you realize your
+                    deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+
+                <p class="topText">You <em>know</em> you want to.</p>
+
+                <div class="formContainer">
+                    <form action="" class="registration">
+                        <div class="raised">
+                            <p class="title">Let's do this</p>
+
+                            <div class="allFields">
+                                <div class="formGrouper">
+                                    <div class="formContainer">
+                                        <label for="firstName"
+                                            >FIRST NAME</label
+                                        >
+                                        <input
+                                            required
+                                            type="text"
+                                            name="firstName"
+                                            id="firstName"
+                                        />
+                                    </div>
+                                    <div class="formContainer">
+                                        <label for="lastName">LAST NAME</label>
+                                        <input
+                                            required
+                                            type="text"
+                                            name="lastName"
+                                            id="lastName"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="formGrouper">
+                                    <div class="formContainer">
+                                        <label for="email">EMAIL</label>
+                                        <input
+                                            required
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                        />
+                                    </div>
+                                    <div class="formContainer">
+                                        <label for="telephone"
+                                            >PHONE NUMBER</label
+                                        >
+                                        <input
+                                            required
+                                            maxlength="12"
+                                            pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+                                            placeholder="123-456-7890"
+                                            type="tel"
+                                            name="telephone"
+                                            id="telephone"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="formGrouper">
+                                    <div class="formContainer">
+                                        <label for="password">PASSWORD</label>
+                                        <input
+                                            required
+                                            minlength="8"
+                                            type="password"
+                                            name="password"
+                                            id="password"
+                                        />
+                                    </div>
+                                    <div class="formContainer">
+                                        <div class="confirmPasswordContainer">
+                                            <label for="confirmPassword"
+                                                >CONFIRM PASSWORD</label
+                                            >
+                                            <input
+                                                required
+                                                type="password"
+                                                name="passwordConfirm"
+                                                id="passwordConfirm"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="submitButton">
+                            Create Account
+                        </button>
+                    </form>
+
+                    <p class="already">
+                        Already have an account?
+                        <a href="" class="logIn">Log in</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
